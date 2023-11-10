@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Lab 12 Matthew Ashline, Section H01, November 9th, 2023 -->
+<meta charset="utf-8">
+<title>Lab12</title>
+<style>
+
+body {background-color:#add8e6}
+
+#all {margin-left:auto;
+	margin-right:auto}
+
+#a {position:absolute;
+	left:160px;
+	top:20px;
+	width:700px;
+	font: bold 100px "Brush Script MT", cursive;
+	color:#6B0000}
+	
+#b {position:absolute;
+	left:280px;
+	top:150px}
+	
+#pic:hover {transform:rotate(180deg)}	
+
+#f {position:absolute;
+	left:630px;
+	top:700px}
+
+#c {position:absolute;
+	left:50px;
+	top:580px;
+	color:#00004b;
+	font: 30px "Garamond", serif}
+
+#d {position:absolute;
+	left:400px;
+	top:610px;
+	color:#00004b;
+	font: 30px "Garamond", serif}
+
+#e {position:absolute;
+	left:50px;
+	top:700px;
+	color:#00004b;
+	font: 30px "Garamond", serif}
+
+#x {text-decoration:underline}
+
+em {color:#007700}
+
+.y {font-family:cursive;
+	font-weight:bold;
+	font-size:50px;
+	color:black}
+	
+</style>
+<script>
+
+function aa()
+	{A=document.getElementById("pic").src;
+	document.getElementById("pic").src="Lab12_Images/good.png"}
+	
+function bb()
+	{document.getElementById("pic").src=A}
+	
+function cc()
+	{document.getElementById("flo").src="Lab12_Images/dead.png";
+	document.getElementById("e").innerHTML="Oh No, It <span class='y'>DIED!</span> :("}
+
+</script>
+</head>
+<body>
+
+<div id="all">
+
+<div id="a">DON'T DIE!!!</div>
+
+<div id="c">I know <span id="x">most</span> people say <em>"Get Well Soon!" ...</em></div>
+
+<div id="d">but that just seemed a little too <span class="y">boring</span>.</div>
+
+<div id="e">Anyways, here is a flower to make you feel better!</div>
+
+<div id="b"><img id="pic" onmouseover="aa()" onmouseout="bb()" src="Lab12_Images/bad.png" alt="Sick or Healthy" height="400" width="400"></div>
+
+<div id="f"><img onmouseover="cc()" src="Lab12_Images/flower.png" alt="flower" id="flo" height="100" width="75"></div>
+
+</div>
+
+<!-- I made a "get well soon" card with dark humor. It says not to die with a poison symbol that turns into an upside down smiley face when moused over. I also give the audience a flower, but if they mouse over it, it permanently changes to a dead flower and the text changes to say that it died. -->
+
+<!-- The github link is mashline29.github.io -->
+
+</body>
+</html>
